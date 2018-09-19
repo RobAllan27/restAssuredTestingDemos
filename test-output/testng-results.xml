@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="10" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="46958" started-at="2018-09-05T07:05:05Z" finished-at="2018-09-05T07:05:52Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="46958" started-at="2018-09-05T07:05:05Z" finished-at="2018-09-05T07:05:52Z">
+      <class name="restAssuredAPIDemosPackage.BasicAPITest">
+        <test-method status="PASS" signature="RESTJSONContentsEditString(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:restAssuredAPIDemosPackage.BasicAPITest@5e3a8624]" name="RESTJSONContentsEditString" duration-ms="44106" started-at="2018-09-05T07:05:06Z" data-provider="DP4RESTJSONMessageContents" finished-at="2018-09-05T07:05:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[JSONmsg1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[John Lennon]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[West Kirby]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RESTJSONContentsEditString -->
+        <test-method status="PASS" signature="RESTJSONContentsEditString(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:restAssuredAPIDemosPackage.BasicAPITest@5e3a8624]" name="RESTJSONContentsEditString" duration-ms="139" started-at="2018-09-05T07:05:50Z" data-provider="DP4RESTJSONMessageContents" finished-at="2018-09-05T07:05:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[JSONmsg2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Paul Mccartney]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chester]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RESTJSONContentsEditString -->
+        <test-method status="PASS" signature="RESTJSONContentsEditString(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:restAssuredAPIDemosPackage.BasicAPITest@5e3a8624]" name="RESTJSONContentsEditString" duration-ms="240" started-at="2018-09-05T07:05:50Z" data-provider="DP4RESTJSONMessageContents" finished-at="2018-09-05T07:05:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[JSONmsg3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ringo Star]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Birkenhead]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RESTJSONContentsEditString -->
+        <test-method status="PASS" signature="RESTPathsTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:restAssuredAPIDemosPackage.BasicAPITest@5e3a8624]" name="RESTPathsTest" duration-ms="499" started-at="2018-09-05T07:05:50Z" data-provider="DP4RESTpathstobetested" finished-at="2018-09-05T07:05:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[checkarrivals200OK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[arrivals]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2/01/2018  3:15:15 PM]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[2/2/18]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RESTPathsTest -->
+        <test-method status="PASS" signature="RESTPathsTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:restAssuredAPIDemosPackage.BasicAPITest@5e3a8624]" name="RESTPathsTest" duration-ms="103" started-at="2018-09-05T07:05:51Z" data-provider="DP4RESTpathstobetested" finished-at="2018-09-05T07:05:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[checkdepts201OK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[departures]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[201]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Saturday, February 03, 2018]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[2/3/18]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RESTPathsTest -->
+        <test-method status="PASS" signature="RESTPathsTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:restAssuredAPIDemosPackage.BasicAPITest@5e3a8624]" name="RESTPathsTest" duration-ms="27" started-at="2018-09-05T07:05:51Z" data-provider="DP4RESTpathstobetested" finished-at="2018-09-05T07:05:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[checkbaggage202OK]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[baggage]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[202]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2/4/18]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[2/4/18]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RESTPathsTest -->
+        <test-method status="PASS" signature="exampleRestTest()[pri:0, instance:restAssuredAPIDemosPackage.BasicAPITest@5e3a8624]" name="exampleRestTest" duration-ms="252" started-at="2018-09-05T07:05:51Z" finished-at="2018-09-05T07:05:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exampleRestTest -->
+        <test-method status="PASS" signature="testHeadersAndCookies()[pri:0, instance:restAssuredAPIDemosPackage.BasicAPITest@5e3a8624]" name="testHeadersAndCookies" duration-ms="186" started-at="2018-09-05T07:05:51Z" finished-at="2018-09-05T07:05:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHeadersAndCookies -->
+      </class> <!-- restAssuredAPIDemosPackage.BasicAPITest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
