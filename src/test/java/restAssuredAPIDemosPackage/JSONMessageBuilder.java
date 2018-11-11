@@ -11,8 +11,6 @@ import componentsForJSONValues.Artist;
 import componentsForJSONValues.MediaCollection;
 import componentsForJSONValues.Musician;
 
-
-
 public class JSONMessageBuilder {
 
 	private MediaCollection medcol;

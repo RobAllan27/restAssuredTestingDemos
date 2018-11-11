@@ -30,30 +30,6 @@ public class ExcelFileReader {
 
 //This method is to set the File path and to open the Excel file, Pass Excel Path and Sheetname as Arguments to this method
 
-	/*
-public static void setExcelFileSheet(String Path,String SheetName) throws Exception {
-
-	   try {
-
-			// Open the Excel file
-
-			FileInputStream ExcelFile = new FileInputStream(Path);
-
-			// Access the required test data sheet
-
-			ExcelWBook = new XSSFWorkbook(ExcelFile);
-
-			ExcelWSheet = ExcelWBook.getSheet(SheetName);
-
-			} catch (Exception e){
-
-				throw (e);
-
-			}
-	}
-
-*/
-
 public static Object[][] getTableArray(String inFilePath, String SheetName)    throws Exception
 
 {   
@@ -138,61 +114,6 @@ private static String getCellData(int RowNum, int ColNum) throws Exception{
 		}
 
 	}
-/*
-public static String getTestCaseName(String sTestCase)throws Exception{
-
-	String value = sTestCase;
-
-	try{
-
-		int posi = value.indexOf("@");
-
-		value = value.substring(0, posi);
-
-		posi = value.lastIndexOf(".");	
-
-		value = value.substring(posi + 1);
-
-		return value;
-
-			}catch (Exception e){
-
-		throw (e);
-
-				}
-
-	}
-	*/
-
-/*
-public static int getRowContains(String sTestCaseName, int colNum) throws Exception{
-
-	int i;
-
-	try {
-
-		int rowCount = ExcelUtils.getRowUsed();
-
-		for ( i=0 ; i<rowCount; i++){
-
-			if  (ExcelUtils.getCellData(i,colNum).equalsIgnoreCase(sTestCaseName)){
-
-				break;
-
-			}
-
-		}
-
-		return i;
-
-			}catch (Exception e){
-
-		throw(e);
-
-		}
-
-	}
-*/
 
 private static int getLastRowUsed() throws Exception {
 

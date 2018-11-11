@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="restAssuredAPIDemosPackage.BasicAPITest">
+      <class name="restwiremock.WiremockServiceVirtualisation">
         <methods>
-          <include name="RESTJSONContents"/>
+          <include name="testWireDefaultURL"/>
         </methods>
-      </class> <!-- restAssuredAPIDemosPackage.BasicAPITest -->
+      </class> <!-- restwiremock.WiremockServiceVirtualisation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

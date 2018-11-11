@@ -9,6 +9,7 @@ import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
 
+import org.yaml.snakeyaml.DumperOptions;
 import org.yaml.snakeyaml.Yaml;
 import org.yaml.snakeyaml.constructor.Constructor;
 
@@ -16,46 +17,46 @@ import org.yaml.snakeyaml.constructor.Constructor;
 
 public class BasicSNAKEYAMLCreator {
 
-	public void createContactArray(){
+	public String createContactArray(){
 		
+		String returnedString = "";
 		//reader = new YamlReader(new FileReader("C:\\Users\\Rob\\Userdata\\DX Software Testing\\Tools\\DX_Automation\\contacts.yaml"));
 		   
 		try {
 		    InputStream input = new FileInputStream(new File("C:\\Users\\Rob\\Userdata\\DX Software Testing\\Tools\\DX_Automation\\contacts.yaml"));
 		    Yaml yaml = new Yaml(new Constructor(Contact.class));
 		    Contact contact = yaml.load(input);
-		    //System.out.println(contact.name);
-		    //System.out.println(contact.age);
-		    //System.out.println(contact.address);
 		    List<Phone> Phones =   contact.phonenumbers;
-		    
 		    Iterator<Phone> it = Phones.iterator();
 		    while (it.hasNext()){
 		    	Phone myphone = it.next();
-		    	//System.out.println(myphone.name);
-		    	//System.out.println(myphone.number);
 		    	if ((myphone.name).equals("Home")){
 		    		myphone.name = "HomeUpdated";
 		    	}
 		    	
 		    	if ((myphone.number).equals("206-555-5138")){
-		    		myphone.name = "206-555-3333";
+		    		myphone.number = "206-555-3333";
 		    	}
 		    }
 		    
-		    /*
-		    for (Phone phone:Phones){
-		    	System.out.println(phone.name);
-		    	//System.out.println(phone.number);
-		    	
-		    }
-		    */
 		    String output = yaml.dump(contact);
-		    System.out.println(output);
+	        DumperOptions options = new DumperOptions();
+	        //options.setExplicitStart(true);
+	        //options.setExplicitEnd(true);
+	        options.setIndent(2);
+	        options.setPrettyFlow(true);
+	        options.setDefaultFlowStyle(DumperOptions.FlowStyle.BLOCK);
+	        //System.out.println("/n/n***********/n/n");
+		    Yaml outputYAML = new Yaml(options);
+		    String fullString = outputYAML.dump(contact); 
+	        returnedString = fullString.substring(fullString.indexOf('\n')+1);
+		    //returnedString = fullString;
+		    System.out.println(returnedString);
 		}
 		catch (FileNotFoundException e){
 			System.out.println(" Could not handle exception ");
-		}	
+		}
+		return returnedString;
 	}
 	
 }

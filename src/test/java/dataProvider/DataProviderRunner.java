@@ -2,7 +2,6 @@ package dataProvider;
 
 import restAssuredAPIDemosPackage.JSONMessageBuilder;
 import yamlgenerator.BasicSNAKEYAMLCreator;
-import yamlgenerator.BasicYAMLCreator;
 
 public class DataProviderRunner {
 
